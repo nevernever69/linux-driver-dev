@@ -2,7 +2,7 @@
 #include<linux/module.h>
 
 
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("GPL");		
 
 static int hello_init(void)
 {
@@ -18,5 +18,6 @@ static void hello_exit(void)
 
 }
 
-module_init(hello_init);
-module_exit(hello_exit);
+module_init(hello_init);  	//kernel macros
+module_exit(hello_exit);	//kernel macros
+
